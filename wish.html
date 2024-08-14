@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Independence Day</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Poppins');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(to bottom, #ff9933, white, #138808);
+            height: 100vh;
+            margin: 0;
+            overflow: hidden;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: black;
+        }
+
+        .chakra {
+            position: absolute;
+            width: 10vw; 
+            height: 10vw; 
+            max-width: 100px;
+            max-height: 100px; 
+            background: transparent;
+            border-radius: 50%;
+            border: 2vw solid #000; 
+            box-shadow: 0 0 0 2vw #ff9933, 0 0 0 4vw white, 0 0 0 6vw #138808;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            animation: rotateChakra 4s linear infinite;
+        }
+
+        .chakra:before {
+            content: '';
+            position: absolute;
+            width: 60%;
+            height: 60%;
+            border-radius: 50%;
+            background: #000;
+        }
+
+        .chakra:after {
+            content: '';
+            position: absolute;
+            width: 1vw;
+            height: 80%;
+            background: #000;
+            transform: rotate(45deg);
+        }
+
+        .chakra .spoke {
+            position: absolute;
+            width: 1vw;
+            height: 40%;
+            background: #000;
+            transform-origin: 50% 100%;
+            transform: rotate(calc(45deg * var(--i)));
+        }
+
+        @keyframes rotateChakra {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        .chakra.top-left {
+            top: 1rem;
+            left: 1rem;
+            transform: translate(-50%, -50%);
+        }
+
+        .chakra.top-right {
+            top: 1rem;
+            right: 1rem;
+            transform: translate(50%, -50%);
+        }
+
+        .chakra.bottom-right {
+            bottom: 1rem;
+            right: 1rem;
+            transform: translate(50%, 50%);
+        }
+
+        .chakra.bottom-left {
+            bottom: 1rem;
+            left: 1rem;
+            transform: translate(-50%, 50%);
+        }
+
+        .message {
+          text-align: center;
+            font-size: 3rem;
+            position: relative;
+            font-size: 25px;
+            z-index: 60;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            background: linear-gradient(45deg, #ff9933, #138808); /* Tricolor gradient */
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+     
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .chakra {
+                width: 15vw;
+                height: 15vw;
+                max-width: 80px;
+                max-height: 80px;
+                animation: rotateChakra 4s linear infinite;
+            }
+            .bottom-right{
+              margin-bottom: 62px;
+            }
+            .bottom-left{
+              margin-bottom: 62px;
+            }
+            .top-right{
+              margin-top: 5px;
+            }
+            .top-left{
+              margin-top: 5px;
+            }
+            .message {
+              text-align: center;
+            font-size: 3rem;
+            position: relative;
+            font-size: 25px;
+            z-index: 60;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            background: linear-gradient(45deg, #ff9933,  #138808); /* Tricolor gradient */
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            }
+            
+            
+        }
+
+        @media (max-width: 480px) {
+            .chakra {
+                width: 20vw;
+                height: 20vw;
+                max-width: 60px;
+                max-height: 60px;
+            }
+
+            .message {
+              text-align: center;
+            font-size: 3rem;
+            position: relative;
+            font-size: 25px;
+            z-index: 60;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            background: linear-gradient(45deg, #ff9933, #138808); /* Tricolor gradient */
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;            }
+        }
+    </style>
+</head>
+<body>
+    <div class="chakra top-left">
+        <div class="spoke" style="--i:1;"></div>
+        <div class="spoke" style="--i:2;"></div>
+        <div class="spoke" style="--i:3;"></div>
+        <div class="spoke" style="--i:4;"></div>
+        <div class="spoke" style="--i:5;"></div>
+        <div class="spoke" style="--i:6;"></div>
+        <div class="spoke" style="--i:7;"></div>
+        <div class="spoke" style="--i:8;"></div>
+    </div>
+    <div class="chakra top-right">
+        <div class="spoke" style="--i:1;"></div>
+        <div class="spoke" style="--i:2;"></div>
+        <div class="spoke" style="--i:3;"></div>
+        <div class="spoke" style="--i:4;"></div>
+        <div class="spoke" style="--i:5;"></div>
+        <div class="spoke" style="--i:6;"></div>
+        <div class="spoke" style="--i:7;"></div>
+        <div class="spoke" style="--i:8;"></div>
+    </div>
+    <div class="chakra bottom-right">
+        <div class="spoke" style="--i:1;"></div>
+        <div class="spoke" style="--i:2;"></div>
+        <div class="spoke" style="--i:3;"></div>
+        <div class="spoke" style="--i:4;"></div>
+        <div class="spoke" style="--i:5;"></div>
+        <div class="spoke" style="--i:6;"></div>
+        <div class="spoke" style="--i:7;"></div>
+        <div class="spoke" style="--i:8;"></div>
+    </div>
+    <div class="chakra bottom-left">
+        <div class="spoke" style="--i:1;"></div>
+        <div class="spoke" style="--i:2;"></div>
+        <div class="spoke" style="--i:3;"></div>
+        <div class="spoke" style="--i:4;"></div>
+        <div class="spoke" style="--i:5;"></div>
+        <div class="spoke" style="--i:6;"></div>
+        <div class="spoke" style="--i:7;"></div>
+        <div class="spoke" style="--i:8;"></div>
+    </div>
+
+    <div class="message" id="message">
+        <!-- User's name will be inserted here -->
+    </div>
+
+    <script>
+        function getName() {
+            var name = localStorage.getItem('userName');
+            if (name) {
+                document.getElementById('message').innerText = `Happy Independence Day, ${name}!`;
+            } else {
+                // Redirect to index.html if no name is found
+                window.location.href = 'index.html';
+            }
+        }
+        if (performance.navigation.type === 1) {
+            window.location.href = "index.html";
+        }
+
+        // Call getName on page load
+        window.onload = getName;
+    </script>
+</body>
+</html>
